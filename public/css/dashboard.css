@@ -1,0 +1,34 @@
+h3 {
+    font-family: lato;
+    color: #777;
+    font-weight: 500;
+}
+
+.chart {
+    width: 49%;
+    height: auto;
+}
+
+.align-text-center {
+    text-align: center;
+}
+
+.number {
+    text-align: center;
+    font-size: 35px
+}
+
+.box {
+    background-color: #F1F1F1 !important;
+    /* color: white; */
+}
+
+.courseBox:hover {
+    background-color: #f9f9f9;
+}
+
+.editable-input {
+    background-color: white;
+    border: 1px solid #cccccc;
+    cursor: text;
+}
