@@ -92,4 +92,8 @@ class HomeController
 
         return view('home', compact('chart2', 'chart3', 'chart4', 'settings1'));
     }
+
+    public function hicham(){
+        return view('hicham');
+    }
 }

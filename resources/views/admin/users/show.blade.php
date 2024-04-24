@@ -130,7 +130,7 @@
     </ul>
     <div class="tab-content">
         <div class="tab-pane" role="tabpanel" id="auteur_cours">
-            @includeIf('admin.users.relationships.auteurCours', ['cours' => $user->auteurCours])
+            {{-- @includeIf('admin.users.relationships.auteurCours', ['cours' => $user->auteurCours]) --}}
         </div>
         <div class="tab-pane" role="tabpanel" id="utilisateur_utilisateur_reponses">
             @includeIf('admin.users.relationships.utilisateurUtilisateurReponses', ['utilisateurReponses' => $user->utilisateurUtilisateurReponses])

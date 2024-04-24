@@ -11,6 +11,7 @@ use App\Http\Controllers\Admin\LessonController;
 use App\Http\Controllers\Admin\UsersController;
 use App\Http\Controllers\Frontend\LessonController as FrontendLessonController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Admin\HomeController as Hicham;
 use Illuminate\Support\Facades\Http;
 
 
@@ -275,5 +276,4 @@ Route::delete('delete/{user}', [UsersController::class, 'deleteUnapproved'])->na
 Route::post('profile/update', [UsersController::class, 'updateProfile'])->name('profile.update');
 
 
-
-//?Hamza Ben Allou
+Route::get('/hicham',[Hicham::class , 'hicham']);

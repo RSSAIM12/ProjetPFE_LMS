@@ -63,7 +63,8 @@ class UsersController extends Controller
     {
         abort_if(Gate::denies('user_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        $user->load('roles', 'auteurCours', 'utilisateurUtilisateurReponses', 'utilisateurScoreQuizzes', 'utilisateurProgressions', 'utilisateurCommentaires', 'userUserAlerts');
+        // $user->load('roles', 'auteurCours', 'utilisateurUtilisateurReponses', 'utilisateurScoreQuizzes', 'utilisateurProgressions', 'utilisateurCommentaires', 'userUserAlerts');
+        $user->load('roles', 'utilisateurUtilisateurReponses', 'utilisateurScoreQuizzes', 'utilisateurProgressions', 'utilisateurCommentaires', 'userUserAlerts');
 
         return view('frontend.users.show', compact('user'));
     }

@@ -3,7 +3,8 @@ use App\Http\Controllers\SectionController;
 use App\Http\Controllers\LessonController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-    Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:sanctum']], function () {
+
+Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', 'middleware' => ['auth:sanctum']], function () {
     // Cours
     Route::post('cours/media', 'CoursApiController@storeMedia')->name('cours.storeMedia');
     Route::apiResource('cours', 'CoursApiController');
